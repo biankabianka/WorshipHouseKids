@@ -8,16 +8,64 @@
   </head>
   <body>
     <!--Header/ Navbar -->
+    <div class="bgPink mobileMediaButton">
+      <span>WorshipHouse Media</span>
+      <img
+        class="mobileNavMenu"
+        src="./assets/icons/Vector2.png"
+        alt="WorshipHouse Logo"
+      />
+    </div>
     <header class="header">
       <div>
-        <div class="header-first-section">
+        <!-- For mobile -->
+        <div class="displayNoneDesktop">
+          <div class="mobileNavContainer">
+            <a href="/" aria-label="back to home">
+              <img
+                class="mobileNavMenu"
+                src="./assets/icons/menu.png"
+                alt="WorshipHouse Logo"
+            /></a>
+            <a href="/" aria-label="back to home">
+              <img
+                class="brand-logo"
+                src="./assets/Brand-logo.png"
+                alt="WorshipHouse Logo"
+            /></a>
+            <div class="header-icons-section">
+              <a href="">
+                <img src="./assets/icons/User.svg" alt="User profile" />
+              </a>
+              <a href="" class="cart-container">
+                <img src="./assets/icons/Cart.png" alt="Cart" />
+                <span class="cart-count">1</span>
+              </a>
+            </div>
+          </div>
+          <form class="input-field">
+            <div class="input-container">
+              <div class="input-field-icon">
+                <img src="./assets/icons/Search.svg" alt="Search icon" />
+              </div>
+              <input
+                type="search"
+                id="header-search"
+                placeholder="Find kids videos"
+                required
+              />
+            </div>
+          </form>
+        </div>
+
+        <!-- For desktop -->
+        <div class="header-first-section displayNoneMobile">
           <a href="/" aria-label="back to home">
             <img
               class="brand-logo"
               src="./assets/Brand-logo.png"
               alt="WorshipHouse Logo"
           /></a>
-
           <form class="input-field">
             <div class="input-container">
               <div class="input-field-icon">
@@ -63,20 +111,26 @@
     </header>
     <!-- Banner Section -->
     <section>
-      <div class="carousel-background">
-        <div class="container carousel-container">
-          <div class="carousel" id="carousel">
-            <img src="./assets/banner.png" alt="Slide 1" />
+      <div class="marginBottom">
+        <div class="carousel-background">
+          <div class="container carousel-container">
+            <div class="carousel-wrapper">
+              <div class="carousel" id="bannerCarousel">
+                <img src="./assets/banner.png" alt="Slide 1" />
+                <img src="./assets/banner.png" alt="Slide 2" />
+                <img src="./assets/banner.png" alt="Slide 3" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="navigation">
-        <button class="arrow left" id="prev">
-          <img src="./assets/preview.png" alt="" />
-        </button>
-        <button class="arrow right" id="next">
-          <img src="./assets/next.png" alt="" />
-        </button>
+        <div class="navigation">
+          <button class="arrow left" id="prev-bannerCarousel">
+            <img src="./assets/preview.png" alt="Previous" />
+          </button>
+          <button class="arrow right" id="next-bannerCarousel">
+            <img src="./assets/next.png" alt="Next" />
+          </button>
+        </div>
       </div>
     </section>
     <!-- Best Seller Section -->
@@ -85,7 +139,7 @@
       <div class="">
         <div class="bestSellerTabsWrapper">
           <div class="bestSellerTabsContainer">
-            <button class="bestSellerTabs bestSellerTabSelected">
+            <button class="bestSellerTabs bgPink textWhite">
               All products
             </button>
             <button class="bestSellerTabs bgSoftPink">Games</button>
@@ -354,22 +408,25 @@
     <section>
       <div class="featureWrapper">
         <h2 class="headingTitle textBlue">Featured games</h2>
-
         <div class="featuredContainer">
-          <button class="arrow-button" id="prev">
-            <img src="./assets/preview.png" alt="" />
+          <button class="arrow-button" id="prev-1">
+            <img src="./assets/preview.png" alt="Previous" />
           </button>
 
           <div class="featuresImageContainer">
-            <img src="./assets/feature/frame-1.png" alt="" />
-            <img src="./assets/feature/frame-2.png" alt="" />
-            <img src="./assets/feature/frame-3.png" alt="" />
-            <img src="./assets/feature/frame-4.png" alt="" />
+            <div class="featureCarousel">
+              <img src="./assets/feature/frame-1.png" alt="Game 1" />
+              <img src="./assets/feature/frame-2.png" alt="Game 2" />
+              <img src="./assets/feature/frame-3.png" alt="Game 3" />
+              <img src="./assets/feature/frame-3.png" alt="Game 4" />
+              <img src="./assets/feature/frame-4.png" alt="Game 5" />
+            </div>
           </div>
 
-          <button class="arrow-button" id="next">
-            <img src="./assets/next.png" alt="" />
+          <button class="arrow-button" id="next-1">
+            <img src="./assets/next.png" alt="Next" />
           </button>
+
           <div class="featureBg"></div>
         </div>
       </div>
@@ -382,11 +439,11 @@
           <div class="testimonialCardContainer">
             <div class="testimonialCard bgNavyBlue">
               <div class="testimonialContent">
-                <div>
+                <div class="testmonialImageContainer">
                   <img src="./assets/icons/coma.svg" alt="" />
                 </div>
                 <h3 class="testimonialTitle">Darlene Robertson</h3>
-                <p>
+                <p class="testimonialParagraph">
                   Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
@@ -394,11 +451,11 @@
             </div>
             <div class="testimonialCard bgPink">
               <div class="testimonialContent">
-                <div>
+                <div class="testmonialImageContainer">
                   <img src="./assets/icons/coma.svg" alt="" />
                 </div>
                 <h3 class="testimonialTitle">Darlene Robertson</h3>
-                <p>
+                <p class="testimonialParagraph">
                   Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
@@ -406,11 +463,11 @@
             </div>
             <div class="testimonialCard bgBlue">
               <div class="testimonialContent">
-                <div>
+                <div class="testmonialImageContainer">
                   <img src="./assets/icons/coma.svg" alt="" />
                 </div>
                 <h3 class="testimonialTitle">Darlene Robertson</h3>
-                <p>
+                <p class="testimonialParagraph">
                   Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
@@ -418,11 +475,11 @@
             </div>
             <div class="testimonialCard bgOrange">
               <div class="testimonialContent">
-                <div>
+                <div class="testmonialImageContainer">
                   <img src="./assets/icons/coma.svg" alt="" />
                 </div>
                 <h3 class="testimonialTitle">Darlene Robertson</h3>
-                <p>
+                <p class="testimonialParagraph">
                   Adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                   dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
@@ -439,65 +496,80 @@
         <h2 class="headingTitle textBlue">New Products</h2>
 
         <div class="newProductsContainer">
-          <button class="arrow-button" id="prev">
-            <img src="./assets/preview.png" alt="" />
+          <button class="arrow-button" id="prev-productCarousel">
+            <img src="./assets/preview.png" alt="Previous" />
           </button>
-          <div class="newProductsCardContainer">
-            <div class="bestSellerCards">
-              <img src="./assets/new-products/frame-1.png" alt="" />
+
+          <div class="newProductsCardContainer" id="productCarousel">
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-1.png" alt="Product 1" />
               <div class="newProductsTextContainer">
                 <div>
                   <h4 class="cardTitle">Match It! Back To School Edition</h4>
                   <p class="cardParagraph">Children's Ministry Deals</p>
                 </div>
-                <div class="cardPriceContainer">
+                <div class="cardPriceContainer displayNoneMobile">
                   <p class="cardTitle">$10.00</p>
                   <p class="cardPrice">$20.00</p>
                 </div>
               </div>
             </div>
-            <div class="bestSellerCards">
-              <img src="./assets/new-products/frame-2.png" alt="" />
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-2.png" alt="Product 2" />
               <div class="newProductsTextContainer">
                 <div>
                   <h4 class="cardTitle">Match It! Back To School Edition</h4>
                   <p class="cardParagraph">Children's Ministry Deals</p>
                 </div>
-                <div class="cardPriceContainer">
+                <div class="cardPriceContainer displayNoneMobile">
                   <p class="cardTitle">$10.00</p>
                   <p class="cardPrice">$20.00</p>
                 </div>
               </div>
             </div>
-            <div class="bestSellerCards">
-              <img src="./assets/new-products/frame-3.png" alt="" />
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-3.png" alt="Product 3" />
               <div class="newProductsTextContainer">
                 <div>
                   <h4 class="cardTitle">Match It! Back To School Edition</h4>
                   <p class="cardParagraph">Children's Ministry Deals</p>
                 </div>
-                <div class="cardPriceContainer">
+                <div class="cardPriceContainer displayNoneMobile">
                   <p class="cardTitle">$10.00</p>
                   <p class="cardPrice">$20.00</p>
                 </div>
               </div>
             </div>
-            <div class="bestSellerCards">
-              <img src="./assets/new-products/frame-4.png" alt="" />
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-4.png" alt="Product 4" />
               <div class="newProductsTextContainer">
                 <div>
                   <h4 class="cardTitle">Match It! Back To School Edition</h4>
                   <p class="cardParagraph">Children's Ministry Deals</p>
                 </div>
-                <div class="cardPriceContainer">
+                <div class="cardPriceContainer displayNoneMobile">
+                  <p class="cardTitle">$10.00</p>
+                  <p class="cardPrice">$20.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="newProductCards">
+              <img src="./assets/new-products/frame-1.png" alt="Product 1" />
+              <div class="newProductsTextContainer">
+                <div>
+                  <h4 class="cardTitle">Match It! Back To School Edition</h4>
+                  <p class="cardParagraph">Children's Ministry Deals</p>
+                </div>
+                <div class="cardPriceContainer displayNoneMobile">
                   <p class="cardTitle">$10.00</p>
                   <p class="cardPrice">$20.00</p>
                 </div>
               </div>
             </div>
           </div>
-          <button class="arrow-button" id="prev">
-            <img src="./assets/next.png" alt="" />
+
+          <button class="arrow-button" id="next-productCarousel">
+            <img src="./assets/next.png" alt="Next" />
           </button>
         </div>
       </div>
@@ -685,6 +757,8 @@
       <div class="footerTriangleDeco"></div>
     </section>
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="bannerCarousel.js"></script>
+    <script src="productCarousel.js"></script>
+    <script src="featureCarousel.js"></script>
   </body>
 </html>
