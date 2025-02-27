@@ -8,7 +8,7 @@ document.querySelectorAll(".featuredContainer").forEach((carouselContainer, idx)
     const totalImages = images.length;
 
     function getImageWidth() {
-        return images[0].clientWidth + 20; // Including gap
+        return images[0].clientWidth + 20;
     }
 
     function updateCarousel() {

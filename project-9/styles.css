@@ -40,16 +40,22 @@ a {
   color: #ec007a;
 }
 
+
 .textWhite {
   color: #ffffff !important;
 }
 
+.butPink{
+  background-color: #ff3da1;
+
+}
+
 .bgPink {
-  background-color: #f466af;
+  background-color: #F466AF;
 }
 
 .bgSoftPink {
-  background-color: #fab3d7;
+  background-color: #FFCBE4;
 }
 
 .bgWhite {
@@ -557,6 +563,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: -30px;
+  gap: 13.53px;
 }
 
 .arrow {
@@ -617,10 +624,12 @@ a {
 
   transform: scale(1.3);
   transform-origin: center bottom;
+  max-width: 236.09px;
+  width: 100%;
   padding: 16px 30px;
   cursor: pointer;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 18.77px;
   text-transform: uppercase;
@@ -712,7 +721,7 @@ a {
 .bestSellerCardsContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 32px;
   padding: 60px;
 }
 
@@ -753,7 +762,7 @@ a {
   color: #656565;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 14.08px;
 }
 
@@ -787,20 +796,21 @@ a {
   }
   .bestSellerCardsContainer {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 32px;
     padding: 20px;
   }
   .cardTextContainer {
     padding: 10px;
   }
   .cardTitle {
-    font-size: 12px;
-    line-height: 14.08px;
+    font-size: 16px;
+    line-height: 18.77px;
     margin-bottom: 2px;
   }
   .cardParagraph {
-    font-size: 10px;
-    line-height: 11.73px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.08px;
   }
   .bestSellersRightDeco {
     display: none;
@@ -837,7 +847,7 @@ a {
   position: relative;
   padding-block: 20px;
   background-color: #f2785f;
-  transform: rotate(-1deg);
+  transform: rotate(-1.42deg);
   margin-inline: -20px;
 }
 
@@ -883,17 +893,17 @@ a {
 
 .decorationBox {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 43.31px;
+  height: 43.31px;
   border-radius: 12px;
-  transform: rotate(45deg);
+  transform: rotate(27.5deg);
   border: 2px solid #ffffff;
 }
 
 .playForFreeTxt {
   font-size: 50px;
   font-weight: 900;
-  font-family: sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   -webkit-text-fill-color: transparent;
@@ -904,7 +914,7 @@ a {
 .lunchboxSecondContainer {
   margin-block-start: 96px;
   display: flex;
-  column-gap: 52px;
+  column-gap: 40px;
   max-width: 1296px;
   margin-inline: auto;
   padding-inline: 32px;
@@ -955,7 +965,7 @@ a {
 
 .lunchboxTxt {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 24px;
   color: #656565;
   font-weight: 500;
   margin-block-start: 16px;
@@ -1122,7 +1132,7 @@ a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 24px;
   margin-bottom: 30px;
   max-width: 52ch;
 }
@@ -1264,6 +1274,7 @@ a {
   position: relative;
   isolation: isolate;
 }
+
 .theLatestLeftDeco {
   position: absolute;
   height: 480px;
@@ -1335,15 +1346,15 @@ a {
   color: #000000;
   font-size: 36px;
   font-weight: 700;
-  line-height: 42px;
+  line-height: 42.23px;
   text-align: center;
 }
 
 .cosmicSubTitle {
   color: #656565;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 18.77px;
   text-align: center;
 }
 
@@ -1477,7 +1488,7 @@ a {
 }
 
 .featureCarousel img {
-  border-radius: 10px;
+  border-radius: 20px;
   max-height: 300px;
   width: calc(100% / 5);
   flex-shrink: 0;
@@ -1656,14 +1667,14 @@ a {
 }
 .testimonialTitle {
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   /* margin-bottom: 10px; */
 }
 .testimonialParagraph {
   text-align: center;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
 }
 
@@ -1730,7 +1741,7 @@ a {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 16px;
 }
 .cardPriceContainer {
   text-align: end;
@@ -1856,7 +1867,7 @@ a {
 .blogScroller {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .blogRightCard {
@@ -1873,9 +1884,9 @@ a {
 
 .blogRightCardImage img {
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
   /* width: 440px; */
-  height: 262px;
+  height: 264px;
 }
 
 .blogRightCardContent {
@@ -1977,14 +1988,14 @@ a {
     padding: 20px 0;
   }
   .blogLeftTitle {
-    font-size: 22px;
-    line-height: 25.81px;
+    font-size: 36px;
+    line-height:42.23px;
     text-align: center;
   }
 
   .blogLeftParagraph {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: center;
   }
 
@@ -2091,7 +2102,7 @@ a {
   max-width: 64ch;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 24px;
 }
 .footerIconContainer {
   display: flex;
